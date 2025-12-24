@@ -1,0 +1,86 @@
+question,answer,generated_questions,relevancy_score,rating,pass_fail,evaluation_status,error
+Can i carry my dog onboard?,"You may carry a small dog onboard flynas flights if the combined weight of your dog and its container does not exceed 5kg. The container must be flexible, fit within 47cm x 40cm x 25cm, have proper ventilation, be leak-proof, and securely fastened. Your dog must remain in the container throughout the flight, which should be stowed under the seat in front of you. Please note, you cannot sit in row 1 or emergency exit seats, and you are fully responsible for your pet during the journey.
+
+References:
+https://www.flynas.com/en/transportation-live-animals",What are the requirements for bringing a small dog onboard flynas flights? | What are the requirements for bringing a small dog onboard flynas flights? | What are the requirements for carrying a small dog onboard flynas flights?,0.6702,MEDIUM,PASS,OK,
+"If I have only cabin baggage, what's the latest I can arrive at the gate?","If you are travelling with only cabin baggage on flynas flights, please ensure you arrive at the boarding gate at least 15 minutes before the scheduled departure time, as gates close at that time.
+
+References:
+https://www.flynas.com/en/contact-us/faqs",How early should I arrive at the boarding gate when travelling with only cabin baggage on flynas flights? | How early should I arrive at the boarding gate for flynas flights when travelling with only cabin baggage? | How early should I arrive at the boarding gate for flynas flights when travelling with only cabin baggage?,0.6736,MEDIUM,PASS,OK,
+How much does it cost to transport a golf set?,"Thank you for your inquiry. Golf equipment should be packed in a recognized golf case for carriage on flynas flights. Sports equipment, including golf sets, must be paid for separately and will not be checked within your standard baggage allowance. While there is mention of a handling fee of SAR 100 for oversized sporting items, the exact cost and detailed policy for transporting a golf set are not specified in the available information.
+
+References:
+https://www.flynas.com/en/plan-my-trip/sport-equipment
+https://www.flynas.com/en/plan-my-trip/baggage",What is the cost and policy for transporting a golf set on flynas flights? | What is the cost and policy for transporting a golf set on flynas flights? | What is the cost and policy for transporting a golf set on flynas flights?,0,LOW,FAIL,OK,
+What's the cancellation fee for domestic flights?,"For domestic flights on flynas, cancellation is not allowed for Economy Light and Economy Value bundles. Economy Plus allows cancellation for a fee of 150 SAR, and Premium Class allows cancellation for a fee of 200 SAR. If your booking is eligible for cancellation, the remaining balance will be held as credit for future use.
+
+References:
+https://www.flynas.com/en/contact-us/faqs",What is the cancellation policy for domestic flights on flynas? | What is the cancellation policy for domestic flights on flynas? | What is the cancellation policy for domestic flights on flynas?,0.6962,MEDIUM,PASS,OK,
+How long will the airline store my baggage?,"Flynas will store unclaimed or delayed baggage for up to 3 months from the date it is made available at your destination airport. If the baggage is not claimed within this period, it may be disposed of without any liability.
+
+References:
+https://www.flynas.com/en/plan-my-trip/baggage",How long will Flynas store unclaimed or delayed baggage? | How long will Flynas store unclaimed or delayed baggage? | How long will Flynas store unclaimed or delayed baggage?,0.7036,MEDIUM,PASS,OK,
+I have a flight from ruh to dubai and want to know the deprature terminal,"For your flynas flight from Riyadh (RUH) to Dubai (DXB), departures are from Terminal 5 at King Khalid International Airport in Riyadh, and arrivals are at Terminal 1 at Dubai International Airport. Please ensure you proceed to Terminal 5 for your departure from Riyadh.
+
+References:
+https://www.flynas.com/en/plan-my-trip/airports-terminals",Which terminals should I use for my flynas flight from Riyadh to Dubai? | Which terminals should I use for my flynas flight from Riyadh to Dubai? | Which terminals should I use for my flynas flight from Riyadh to Dubai?,0.5368,MEDIUM,PASS,OK,
+what is the ruh departure terminal for international flights?,"I'm sorry, I do not have the specific information regarding which terminal is used for international departures at Riyadh airport for flynas flights.",Which terminal is used for international departures at Riyadh airport for flynas flights? | Which terminal is used for international departures at Riyadh airport for flynas flights? | Which terminal is used for international departures at Riyadh airport for flynas flights?,0,LOW,FAIL,OK,
+"I was delayed due to a family emergency and didn't issue my boarding pass. I arrived early for the flight, but I was denied boarding. Is there a way to change the flight?","I'm sorry, but I do not have specific information regarding flight changes in this situation. Thank you for your understanding.",What are the flight changes in this situation? | What are the flight changes in this situation? | What are the flight changes in this situation?,0,LOW,FAIL,OK,
+What about the baggage allowances?,"Here is a summary of flynas baggage allowances for all fare bundles:
+
+Domestic Flights:
+
+Economy Light: 1 carry-on (7kg), no checked baggage.
+Economy Value: 1 checked bag (20kg), 1 carry-on (7kg).
+Economy Plus: 1 checked bag (30kg), 1 carry-on (7kg).
+
+International Flights:
+
+Economy Light (International1/3): 1 carry-on (7kg), no checked baggage.
+Economy Value (International1): 1 checked bag (20kg), 1 carry-on (7kg).
+Economy Plus (International1): 1 checked bag (30kg), 1 carry-on (7kg).
+Economy Light (International2): 1 checked bag (20kg), 1 carry-on (7kg).
+Economy Value (International2): 1 checked bag (30kg), 1 carry-on (7kg).
+Economy Plus (International2): 2 checked bags (20kg each), 1 carry-on (7kg).
+Economy Value (International3): 1 checked bag (30kg), 1 carry-on (7kg).
+Economy Plus (International3): 2 checked bags (20kg each), 1 carry-on (7kg).
+
+Premium Class (All flights): 2 checked bags (23kg each), 1 carry-on (7kg).
+
+Please let me know if you need details for a specific route or bundle.",What are the baggage allowances for flynas fare bundles? | What are the baggage allowances for flynas fare bundles? | What are the baggage allowances for flynas fare bundles?,0.778,MEDIUM,PASS,OK,
+in case I cancelled my flight from DXB to RUH on plus bundle will I get full refund?,"If you cancel your Plus bundle flight from Dubai to Riyadh, a cancellation fee of 200 SAR will be deducted, and the remaining balance will be held as credit in your Nas wallet, valid for one year. A full cash refund is not provided; the credit can be used for future flynas flights.
+
+References:
+https://www.flynas.com/en/booking-flynas/fare-types",What happens if I cancel my Plus bundle flight from Dubai to Riyadh? | What happens if I cancel my Plus bundle flight from Dubai to Riyadh? | What happens if I cancel my Plus bundle flight from Dubai to Riyadh?,0.6879,MEDIUM,PASS,OK,
+can I use the credit shell for my wife?,"Yes, you may use your flynas credit shell for your wife, as it can be applied to bookings or change fees for the original passenger or a member of their immediate family.
+
+References:
+https://www.flynas.com/en/contact-us/faqs",Can I use my flynas credit shell for my wife's booking? | Can I use my flynas credit shell for my wife's booking? | Can I use my flynas credit shell for my wife's booking?,0.8021,HIGH,PASS,OK,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+  | #   | Question                         | Score | Pass/Fail |                                                                                                                     ,,,,,,,
+  |-----|----------------------------------|-------|-----------|                                                                                                                     ,,,,,,,
+  | 1   | Dog onboard?                     | 0.67  | PASS      |                                                                                                                     ,,,,,,,
+  | 2   | Latest gate arrival?             | 0.67  | PASS      |                                                                                                                     ,,,,,,,
+  | 3   | Golf set cost?                   | 0.00  | FAIL      |                                                                                                                     ,,,,,,,
+  | 4   | Cancellation fee?                | 0.70  | PASS      |                                                                                                                     ,,,,,,,
+  | 5   | Baggage storage?                 | 0.70  | PASS      |                                                                                                                     ,,,,,,,
+  | 6   | RUH-Dubai terminal?              | 0.54  | PASS      |                                                                                                                     ,,,,,,,
+  | 7   | RUH international terminal?      | 0.00  | FAIL      |                                                                                                                     ,,,,,,,
+  | 8   | Denied boarding - change flight? | 0.00  | FAIL      |                                                                                                                     ,,,,,,,
+  | 9   | Baggage allowances?              | 0.78  | PASS      |                                                                                                                     ,,,,,,,
+  | 10  | Plus bundle refund?              | 0.69  | PASS      |                                                                                                                     ,,,,,,,
+  | 11  | Credit shell for wife?           | 0.80  | PASS      |   ,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+                                                                                                                                                                                     ,,,,,,,
+  Results Summary:                                                                                                                                                                   ,,,,,,,
+  - PASS: 8/11 (73%)                                                                                                                                                                 ,,,,,,,
+  - FAIL: 3/11 (27%)                                                                                                                                                                 ,,,,,,,
+  - Average Score: 0.4860                                                                                                                                                            ,,,,,,,
+                                                                                                                                                                                     ,,,,,,,
+  Next run will auto-save as answer_rel,,,,,,,

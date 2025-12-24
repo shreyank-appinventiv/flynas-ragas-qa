@@ -1,0 +1,7 @@
+# API Keys
+flynas_open_ai_key.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.env
