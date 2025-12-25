@@ -1,0 +1,597 @@
+[
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/fingerprint",
+    "status": 200,
+    "method": "POST",
+    "body": {
+      "fingerprint": "cwIlusOsl4h4g53kqEFm7Og8Znxp5fHvosImUJv1A7X"
+    }
+  },
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/chat-session",
+    "status": 200,
+    "method": "POST",
+    "body": {
+      "conversation_id": "b29ae1e2-0e3a-4b7c-822a-322a331d68fe",
+      "access_token_expires_in": 900,
+      "refresh_token_expires_in": 2592000
+    }
+  },
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/welcome",
+    "status": 201,
+    "method": "POST",
+    "body": {
+      "response": {
+        "type": "string",
+        "message": "Greetings! You're chatting with Flynas AI. How can I make your journey easier today?"
+      },
+      "debug_data": null
+    }
+  },
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/location-proxy",
+    "status": 200,
+    "method": "GET",
+    "body": {
+      "ip": "95.91.233.96",
+      "network": "95.91.232.0/21",
+      "version": "IPv4",
+      "city": "Munich",
+      "region": "Bavaria",
+      "region_code": "BY",
+      "country": "DE",
+      "country_name": "Germany",
+      "country_code": "DE",
+      "country_code_iso3": "DEU",
+      "country_capital": "Berlin",
+      "country_tld": ".de",
+      "continent_code": "EU",
+      "in_eu": true,
+      "postal": "81249",
+      "latitude": 48.1475,
+      "longitude": 11.5865,
+      "timezone": "Europe/Berlin",
+      "utc_offset": "+0100",
+      "country_calling_code": "+49",
+      "currency": "EUR",
+      "currency_name": "Euro",
+      "languages": "de",
+      "country_area": 357021,
+      "country_population": 82927922,
+      "asn": "AS3209",
+      "org": "Vodafone GmbH"
+    }
+  },
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/settings?language=en&timezone=Europe%2FBerlin",
+    "status": 200,
+    "method": "GET",
+    "body": {
+      "_id": "68d237f2d230a321424a14ef",
+      "heartbeatDelay": 2,
+      "tilesData": [
+        {
+          "sectionName": "About Booking",
+          "tiles": [
+            {
+              "icon": "plane",
+              "metaData": {
+                "intent": "flight_status"
+              },
+              "title": "Check flight status"
+            },
+            {
+              "icon": "book",
+              "metaData": {
+                "intent": "flight_booking"
+              },
+              "title": "Book A Flight"
+            },
+            {
+              "icon": "manage",
+              "metaData": {
+                "intent": "manage_booking"
+              },
+              "title": "Manage My Bookings"
+            }
+          ]
+        },
+        {
+          "sectionName": "Refunds",
+          "tiles": [
+            {
+              "icon": "refund",
+              "metaData": {
+                "intent": "faq"
+              },
+              "title": "What's the refund policy?"
+            },
+            {
+              "icon": "seat",
+              "metaData": {
+                "intent": "manage_booking"
+              },
+              "title": "Can I get a refund for seat selection?"
+            }
+          ]
+        },
+        {
+          "sectionName": "Baggage queries",
+          "tiles": [
+            {
+              "icon": "lost",
+              "metaData": {
+                "intent": "baggage"
+              },
+              "title": "I lost my suitcase"
+            },
+            {
+              "icon": "weight",
+              "metaData": {
+                "intent": "faq"
+              },
+              "title": "How much luggage can I carry?"
+            }
+          ]
+        }
+      ],
+      "timeout": 400,
+      "voiceConfig": {
+        "audioFeedback": {
+          "audioFeedbackStartSound": true,
+          "audioFeedbackStopSound": true,
+          "audioFeedbackVolume": 0.7,
+          "audioFilePaths": {
+            "startSound": "./assets/E10.wav",
+            "stopSound": "./assets/E10.wav"
+          },
+          "enableAudioFeedback": true
+        },
+        "connectionSettings": {
+          "connectionCheckInterval": 30000,
+          "maxIdleTime": 60000,
+          "maxRetries": 3,
+          "retryBackoffMultiplier": 1000
+        },
+        "sessionManagement": {
+          "inactivityTimeout": 10000,
+          "inactivityWarningTime": 7000,
+          "maxSessionDuration": 3600000,
+          "sessionTimeout": 300000
+        },
+        "speechRecognition": {
+          "audioContextResumeTimeout": 5000,
+          "autoSendTimerDuration": 5,
+          "endSilenceTimeoutMs": 60000,
+          "initialSilenceTimeoutMs": 30000,
+          "pauseThreshold": 10000,
+          "speechActivityCheckInterval": 50,
+          "supportedLanguages": [
+            "en-US",
+            "ar-SA",
+            "hi-IN"
+          ]
+        },
+        "tts": {
+          "autoPlay": false,
+          "model": "playai-tts",
+          "responseFormat": "wav",
+          "speed": 1,
+          "voice": "Fritz-PlayAI",
+          "volume": 1
+        }
+      }
+    }
+  },
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/chat",
+    "status": 201,
+    "method": "POST",
+    "body": {
+      "conversation_id": "b29ae1e2-0e3a-4b7c-822a-322a331d68fe",
+      "response": {
+        "type": "string",
+        "message": "You may carry a small dog onboard with flynas as cabin baggage if the combined weight of your dog and its container does not exceed 5 kg. The container must fit within 47cm x 40cm x 25cm, be flexible, ventilated, leak-proof, and securely fastened. Your dog must remain in the container throughout the flight, which should be stowed under the seat in front of you. Please note, you cannot sit in row 1 or emergency exit seats when traveling with a pet.\n\nReferences:\nhttps://www.flynas.com/en/transportation-live-animals",
+        "textToSpeech": {
+          "speech": true,
+          "audioURL": null
+        },
+        "channel_response": "You may carry a small dog onboard with flynas as cabin baggage if the combined weight of your dog and its container does not exceed 5 kg. The container must fit within 47cm x 40cm x 25cm, be flexible, ventilated, leak-proof, and securely fastened. Your dog must remain in the container throughout the flight, which should be stowed under the seat in front of you. Please note, you cannot sit in row 1 or emergency exit seats when traveling with a pet.\n\nReferences:\nhttps://www.flynas.com/en/transportation-live-animals",
+        "lang_info": {
+          "name": "English",
+          "iso2_code": "en",
+          "script": "Latn",
+          "reason": "translation_not_needed"
+        }
+      },
+      "debug_data": {
+        "user_message": "Can i carry my dog onboard? ",
+        "conversation_history": [
+          "User: Can I carry my dog onboard?",
+          "Assistant: You may carry a small dog onboard with flynas as cabin baggage if the combined weight of your dog and its container does not exceed 5 kg. The container must fit within 47cm x 40cm x 25cm, be flexible, ventilated, leak-proof, and securely fastened. Your dog must remain in the container throughout the flight, which should be stowed under the seat in front of you. Please note, you cannot sit in row 1 or emergency exit seats when traveling with a pet.\n\nReferences:\nhttps://www.flynas.com/en/transportation-live-animals"
+        ],
+        "steps": [
+          {
+            "step": "preprocess_complete",
+            "node": "preprocess_node",
+            "timestamp": "2025-12-25T13:55:35.173056",
+            "processing_time_ms": 32.32,
+            "data": {
+              "original_message": "Can i carry my dog onboard? ",
+              "message_to_analyze": "Can I carry my dog onboard?",
+              "derived_meta": null,
+              "matched_option_label": null,
+              "preprocess_trace": {
+                "option_matching": {
+                  "option_match_found": false,
+                  "matched_option_label": null,
+                  "lang_info": {
+                    "name": "English",
+                    "iso2_code": "en",
+                    "reason": "default",
+                    "script": "Latn"
+                  }
+                },
+                "translation": {
+                  "translated": true,
+                  "translated_message": "Can I carry my dog onboard?",
+                  "translation_reason": "The input text is already in English and uses the Latin script. No translation was needed; I preserved the exact grammatical perspective, pronouns, and question format as per instructions.",
+                  "lang_info": {
+                    "iso2_code": "en",
+                    "name": "English",
+                    "script": "Latn",
+                    "use_for_trend": true
+                  }
+                },
+                "post_translation_guardrails": {
+                  "disabled": true
+                },
+                "phase2_semantic_matching": {
+                  "option_match_found": false,
+                  "matched_option_label": null,
+                  "match_type": null
+                },
+                "preprocess_intent_seed": {
+                  "intent": "agent",
+                  "clarification": {}
+                },
+                "risk_aggregation": {
+                  "risk_score": 0,
+                  "blocked": false,
+                  "soft_wall": false,
+                  "warnings": []
+                }
+              }
+            }
+          },
+          {
+            "step": "classify_intention_complete",
+            "node": "classify_intention_node",
+            "timestamp": "2025-12-25T13:55:36.605856",
+            "processing_time_ms": 1428.51,
+            "data": {
+              "intent": "faq",
+              "sub_intent": null,
+              "classification_trace": {
+                "entry": {
+                  "enabled_intents": [
+                    "flight_booking",
+                    "baggage",
+                    "manage_booking",
+                    "terminal",
+                    "faq",
+                    "booking_info",
+                    "flight_status",
+                    "chitchat"
+                  ],
+                  "channel": "web",
+                  "otp_candidate": null,
+                  "current_flow": null
+                },
+                "pattern_analysis": {
+                  "patterns": {
+                    "baggage_claim": {
+                      "value": null
+                    },
+                    "pnr_code": {
+                      "value": null,
+                      "reason": "english_only",
+                      "high_probability": false,
+                      "last_name_present": false
+                    },
+                    "last_name_phrase": {
+                      "value": null,
+                      "awaiting_last_name": false
+                    }
+                  },
+                  "matched_patterns": {},
+                  "intent_from_patterns": null
+                },
+                "query_enhancement": {
+                  "applied": true,
+                  "method": "deterministic",
+                  "history_turns_used": 0,
+                  "flow_context_used": false,
+                  "expansion_terms": [
+                    "carry",
+                    "carrys",
+                    "dog",
+                    "dogs",
+                    "onboard?"
+                  ],
+                  "confidence": 0.9,
+                  "original_length": 27,
+                  "enhanced_length": 247,
+                  "enhanced_message": "i carry my dog onboard flynas support context covering booking changes new bookings cancellations refunds payments check boarding baggage seat selection travel documents visa flight status delays disruptions vouchers ancillaries special assistance"
+                },
+                "score_adjustments": {
+                  "adjustments": {},
+                  "pnr_context_active": false,
+                  "is_first_message": true
+                },
+                "embeddings_classification": {
+                  "top_flows": [
+                    {
+                      "flow_name": "faq",
+                      "@search.score": 0.7790700197219849
+                    },
+                    {
+                      "flow_name": "manage_booking",
+                      "@search.score": 0.755739152431488
+                    },
+                    {
+                      "flow_name": "chitchat",
+                      "@search.score": 0.7526721954345703
+                    },
+                    {
+                      "flow_name": "flight_status",
+                      "@search.score": 0.7512631416320801
+                    },
+                    {
+                      "flow_name": "booking_info",
+                      "@search.score": 0.7510799169540405
+                    },
+                    {
+                      "flow_name": "human",
+                      "@search.score": 0.7500139474868774
+                    },
+                    {
+                      "flow_name": "flight_booking",
+                      "@search.score": 0.7390722632408142
+                    },
+                    {
+                      "flow_name": "baggage",
+                      "@search.score": 0.7375495433807373
+                    },
+                    {
+                      "flow_name": "terminal",
+                      "@search.score": 0.7303172945976257
+                    }
+                  ],
+                  "top_tools": [
+                    {
+                      "tool_name": "explain_booking_and_fare_policies",
+                      "flow_name": "faq",
+                      "@search.score": 0.7992842793464661
+                    },
+                    {
+                      "tool_name": "answer_baggage_policy_questions",
+                      "flow_name": "faq",
+                      "@search.score": 0.7975760102272034
+                    },
+                    {
+                      "tool_name": "provide_special_services_information",
+                      "flow_name": "faq",
+                      "@search.score": 0.7959873080253601
+                    },
+                    {
+                      "tool_name": "manage_booking_choose_action",
+                      "flow_name": "manage_booking",
+                      "@search.score": 0.7887387275695801
+                    },
+                    {
+                      "tool_name": "provide_fleet_and_aircraft_information",
+                      "flow_name": "faq",
+                      "@search.score": 0.7841048240661621
+                    },
+                    {
+                      "tool_name": "explain_premium_services_and_amenities",
+                      "flow_name": "faq",
+                      "@search.score": 0.7829064130783081
+                    },
+                    {
+                      "tool_name": "explain_check_in_and_boarding_procedures",
+                      "flow_name": "faq",
+                      "@search.score": 0.781324565410614
+                    },
+                    {
+                      "tool_name": "answer_insurance_and_protection_questions",
+                      "flow_name": "faq",
+                      "@search.score": 0.7747967839241028
+                    },
+                    {
+                      "tool_name": "terminal_arrival_guidance",
+                      "flow_name": "terminal",
+                      "@search.score": 0.7738358378410339
+                    },
+                    {
+                      "tool_name": "answer_travel_document_questions",
+                      "flow_name": "faq",
+                      "@search.score": 0.7729347944259644
+                    }
+                  ]
+                },
+                "intent_ranking": {
+                  "rank_result": {
+                    "intents": [
+                      {
+                        "name": "faq",
+                        "score": 2.34405
+                      },
+                      {
+                        "name": "manage_booking",
+                        "score": 1.422612
+                      },
+                      {
+                        "name": "terminal",
+                        "score": 0.930832
+                      },
+                      {
+                        "name": "chitchat",
+                        "score": 0.46806
+                      },
+                      {
+                        "name": "flight_status",
+                        "score": 0.439009
+                      },
+                      {
+                        "name": "booking_info",
+                        "score": 0.435107
+                      },
+                      {
+                        "name": "human",
+                        "score": 0.413102
+                      },
+                      {
+                        "name": "flight_booking",
+                        "score": 0.188534
+                      },
+                      {
+                        "name": "baggage",
+                        "score": 0.157169
+                      }
+                    ]
+                  },
+                  "allowed_intents": [
+                    "faq",
+                    "manage_booking",
+                    "terminal",
+                    "chitchat",
+                    "flight_status",
+                    "human"
+                  ],
+                  "current_flow": null,
+                  "note": "Current flow added to allowed intents if not already in the allowed intents"
+                },
+                "llm_classification": {
+                  "llm_response": {
+                    "intent": "faq",
+                    "reason": "The user is asking about the policy of carrying a dog onboard, which is a general information/policy question about pets. This matches the faq intent as it is not tied to a specific booking or action request. It is not chitchat, manage_booking, terminal, flight_status, or human, as there is no booking reference, no request for action, and no escalation."
+                  },
+                  "current_flow": null
+                }
+              }
+            }
+          },
+          {
+            "step": "faq_complete",
+            "node": "faq_node",
+            "timestamp": "2025-12-25T13:55:41.297732",
+            "processing_time_ms": 2964.81,
+            "data": {
+              "response": {
+                "type": "string",
+                "message": "You may carry a small dog onboard with flynas as cabin baggage if the combined weight of your dog and its container does not exceed 5 kg. The container must fit within 47cm x 40cm x 25cm, be flexible, ventilated, leak-proof, and securely fastened. Your dog must remain in the container throughout the flight, which should be stowed under the seat in front of you. Please note, you cannot sit in row 1 or emergency exit seats when traveling with a pet.\n\nReferences:\nhttps://www.flynas.com/en/transportation-live-animals",
+                "textToSpeech": {
+                  "speech": true,
+                  "audioURL": null
+                },
+                "channel_response": "You may carry a small dog onboard with flynas as cabin baggage if the combined weight of your dog and its container does not exceed 5 kg. The container must fit within 47cm x 40cm x 25cm, be flexible, ventilated, leak-proof, and securely fastened. Your dog must remain in the container throughout the flight, which should be stowed under the seat in front of you. Please note, you cannot sit in row 1 or emergency exit seats when traveling with a pet.\n\nReferences:\nhttps://www.flynas.com/en/transportation-live-animals",
+                "lang_info": {
+                  "name": "English",
+                  "iso2_code": "en",
+                  "script": "Latn",
+                  "reason": "translation_not_needed"
+                }
+              },
+              "faq_trace": {
+                "search_result": {
+                  "reason": "CONTEXT_FOUND",
+                  "confidence_score": 0.048131080389144903,
+                  "query": "flynas pet policy for carrying dogs onboard as cabin baggage",
+                  "categories": [
+                    "Baggage",
+                    "Flynas General FAQ"
+                  ],
+                  "references": [
+                    {
+                      "content": "- [Home](https://www.flynas.com/en/) - Transportation of Live Animals ![](https://www.flynas.com/media/tccm2lww/traveling-with-animals1.jpg) # Transportation of Live Animals #### Charges - An extra baggage fee of 5 kg will be charged for the transport of each pet container. #### Specifications - The allowed animals are small Dogs, Cats, and household Birds only, other species of live animals are prohibited. - The total weight of the animal plus the pet container should not exceed a total of 5kg. - The pet container must be flexible adequately to fit within the dimensions of (47cm X 40cm X 25cm) without harming or applying pressure onto the animal. - The pet container must have an adequate number of holes for ventilation. - The pet container must be leak-proof and securely fastened (to prevent the escape of the pet) - The pet must remain in the pet container at all times during the flight. - The pet container must be stowed under the seat in front of the passenger, throughout the flight",
+                      "source_url": "https://www.flynas.com/en/transportation-live-animals",
+                      "source_id": "Transportation_of_Animals_551f4336-3e20-4abb-9313-460c89a67df6",
+                      "category": "Baggage"
+                    },
+                    {
+                      "content": "the escape of the pet) - The pet must remain in the pet container at all times during the flight. - The pet container must be stowed under the seat in front of the passenger, throughout the flight duration and passenger with animal may not seat in row 1 and emergency exit seat. - The passenger is fully responsible for their pet, including any injury or loss. #### Disclaimer - Flynas reserves the right to ensure the compliance of the cages & soft bags to the transportation of live animals\u2019 terms and conditions. - Flynas reserves the right to refuse the carriage of any animal that may pose a threat to its passenger\u2019s safety and/or comfort. - Flynas is not responsible for injuries or accidents that may happen to the pet.",
+                      "source_url": "https://www.flynas.com/en/transportation-live-animals",
+                      "source_id": "Transportation_of_Animals_551f4336-3e20-4abb-9313-460c89a67df6",
+                      "category": "Baggage"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "step": "postprocess_complete",
+            "node": "postprocess_node",
+            "timestamp": "2025-12-25T13:55:41.328390",
+            "processing_time_ms": 7.08,
+            "data": {
+              "response": {
+                "type": "string",
+                "message": "You may carry a small dog onboard with flynas as cabin baggage if the combined weight of your dog and its container does not exceed 5 kg. The container must fit within 47cm x 40cm x 25cm, be flexible, ventilated, leak-proof, and securely fastened. Your dog must remain in the container throughout the flight, which should be stowed under the seat in front of you. Please note, you cannot sit in row 1 or emergency exit seats when traveling with a pet.\n\nReferences:\nhttps://www.flynas.com/en/transportation-live-animals",
+                "textToSpeech": {
+                  "speech": true,
+                  "audioURL": null
+                },
+                "channel_response": "You may carry a small dog onboard with flynas as cabin baggage if the combined weight of your dog and its container does not exceed 5 kg. The container must fit within 47cm x 40cm x 25cm, be flexible, ventilated, leak-proof, and securely fastened. Your dog must remain in the container throughout the flight, which should be stowed under the seat in front of you. Please note, you cannot sit in row 1 or emergency exit seats when traveling with a pet.\n\nReferences:\nhttps://www.flynas.com/en/transportation-live-animals",
+                "lang_info": {
+                  "name": "English",
+                  "iso2_code": "en",
+                  "script": "Latn",
+                  "reason": "translation_not_needed"
+                }
+              },
+              "faq_trace": {
+                "search_result": {
+                  "reason": "CONTEXT_FOUND",
+                  "confidence_score": 0.048131080389144903,
+                  "query": "flynas pet policy for carrying dogs onboard as cabin baggage",
+                  "categories": [
+                    "Baggage",
+                    "Flynas General FAQ"
+                  ],
+                  "references": [
+                    {
+                      "content": "- [Home](https://www.flynas.com/en/) - Transportation of Live Animals ![](https://www.flynas.com/media/tccm2lww/traveling-with-animals1.jpg) # Transportation of Live Animals #### Charges - An extra baggage fee of 5 kg will be charged for the transport of each pet container. #### Specifications - The allowed animals are small Dogs, Cats, and household Birds only, other species of live animals are prohibited. - The total weight of the animal plus the pet container should not exceed a total of 5kg. - The pet container must be flexible adequately to fit within the dimensions of (47cm X 40cm X 25cm) without harming or applying pressure onto the animal. - The pet container must have an adequate number of holes for ventilation. - The pet container must be leak-proof and securely fastened (to prevent the escape of the pet) - The pet must remain in the pet container at all times during the flight. - The pet container must be stowed under the seat in front of the passenger, throughout the flight",
+                      "source_url": "https://www.flynas.com/en/transportation-live-animals",
+                      "source_id": "Transportation_of_Animals_551f4336-3e20-4abb-9313-460c89a67df6",
+                      "category": "Baggage"
+                    },
+                    {
+                      "content": "the escape of the pet) - The pet must remain in the pet container at all times during the flight. - The pet container must be stowed under the seat in front of the passenger, throughout the flight duration and passenger with animal may not seat in row 1 and emergency exit seat. - The passenger is fully responsible for their pet, including any injury or loss. #### Disclaimer - Flynas reserves the right to ensure the compliance of the cages & soft bags to the transportation of live animals\u2019 terms and conditions. - Flynas reserves the right to refuse the carriage of any animal that may pose a threat to its passenger\u2019s safety and/or comfort. - Flynas is not responsible for injuries or accidents that may happen to the pet.",
+                      "source_url": "https://www.flynas.com/en/transportation-live-animals",
+                      "source_id": "Transportation_of_Animals_551f4336-3e20-4abb-9313-460c89a67df6",
+                      "category": "Baggage"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "step": "fastapi_request_response_complete",
+            "node": "fastapi",
+            "timestamp": "2025-12-25T13:55:41.343442",
+            "processing_time_ms": 6213.92,
+            "data": {
+              "request_processing_time_ms": 6213.92,
+              "note": "Includes endpoint execution + response serialization (body parsing not included)"
+            }
+          }
+        ]
+      }
+    }
+  }
+]
