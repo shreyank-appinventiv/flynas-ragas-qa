@@ -1,0 +1,710 @@
+[
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/fingerprint",
+    "status": 200,
+    "method": "POST",
+    "body": {
+      "fingerprint": "X1ERgUPea2X2Xm76vX8v3DUiZrzvg0u44eEavYk53lW"
+    }
+  },
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/chat-session",
+    "status": 200,
+    "method": "POST",
+    "body": {
+      "conversation_id": "cc010eed-fcdc-4cd2-899e-6251e3e88612",
+      "access_token_expires_in": 900,
+      "refresh_token_expires_in": 2592000
+    }
+  },
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/welcome",
+    "status": 201,
+    "method": "POST",
+    "body": {
+      "response": {
+        "type": "string",
+        "message": "Greetings! You're chatting with Flynas AI. How can I make your journey easier today?"
+      },
+      "debug_data": null
+    }
+  },
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/location-proxy",
+    "status": 200,
+    "method": "GET",
+    "body": {
+      "ip": "95.91.233.96",
+      "network": "95.91.232.0/21",
+      "version": "IPv4",
+      "city": "Munich",
+      "region": "Bavaria",
+      "region_code": "BY",
+      "country": "DE",
+      "country_name": "Germany",
+      "country_code": "DE",
+      "country_code_iso3": "DEU",
+      "country_capital": "Berlin",
+      "country_tld": ".de",
+      "continent_code": "EU",
+      "in_eu": true,
+      "postal": "81249",
+      "latitude": 48.1475,
+      "longitude": 11.5865,
+      "timezone": "Europe/Berlin",
+      "utc_offset": "+0100",
+      "country_calling_code": "+49",
+      "currency": "EUR",
+      "currency_name": "Euro",
+      "languages": "de",
+      "country_area": 357021,
+      "country_population": 82927922,
+      "asn": "AS3209",
+      "org": "Vodafone GmbH"
+    }
+  },
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/settings?language=en&timezone=Europe%2FBerlin",
+    "status": 200,
+    "method": "GET",
+    "body": {
+      "_id": "68d237f2d230a321424a14ef",
+      "heartbeatDelay": 2,
+      "tilesData": [
+        {
+          "sectionName": "About Booking",
+          "tiles": [
+            {
+              "icon": "plane",
+              "metaData": {
+                "intent": "flight_status"
+              },
+              "title": "Check flight status"
+            },
+            {
+              "icon": "book",
+              "metaData": {
+                "intent": "flight_booking"
+              },
+              "title": "Book A Flight"
+            },
+            {
+              "icon": "manage",
+              "metaData": {
+                "intent": "manage_booking"
+              },
+              "title": "Manage My Bookings"
+            }
+          ]
+        },
+        {
+          "sectionName": "Refunds",
+          "tiles": [
+            {
+              "icon": "refund",
+              "metaData": {
+                "intent": "faq"
+              },
+              "title": "What's the refund policy?"
+            },
+            {
+              "icon": "seat",
+              "metaData": {
+                "intent": "manage_booking"
+              },
+              "title": "Can I get a refund for seat selection?"
+            }
+          ]
+        },
+        {
+          "sectionName": "Baggage queries",
+          "tiles": [
+            {
+              "icon": "lost",
+              "metaData": {
+                "intent": "baggage"
+              },
+              "title": "I lost my suitcase"
+            },
+            {
+              "icon": "weight",
+              "metaData": {
+                "intent": "faq"
+              },
+              "title": "How much luggage can I carry?"
+            }
+          ]
+        }
+      ],
+      "timeout": 400,
+      "voiceConfig": {
+        "audioFeedback": {
+          "audioFeedbackStartSound": true,
+          "audioFeedbackStopSound": true,
+          "audioFeedbackVolume": 0.7,
+          "audioFilePaths": {
+            "startSound": "./assets/E10.wav",
+            "stopSound": "./assets/E10.wav"
+          },
+          "enableAudioFeedback": true
+        },
+        "connectionSettings": {
+          "connectionCheckInterval": 30000,
+          "maxIdleTime": 60000,
+          "maxRetries": 3,
+          "retryBackoffMultiplier": 1000
+        },
+        "sessionManagement": {
+          "inactivityTimeout": 10000,
+          "inactivityWarningTime": 7000,
+          "maxSessionDuration": 3600000,
+          "sessionTimeout": 300000
+        },
+        "speechRecognition": {
+          "audioContextResumeTimeout": 5000,
+          "autoSendTimerDuration": 5,
+          "endSilenceTimeoutMs": 60000,
+          "initialSilenceTimeoutMs": 30000,
+          "pauseThreshold": 10000,
+          "speechActivityCheckInterval": 50,
+          "supportedLanguages": [
+            "en-US",
+            "ar-SA",
+            "hi-IN"
+          ]
+        },
+        "tts": {
+          "autoPlay": false,
+          "model": "playai-tts",
+          "responseFormat": "wav",
+          "speed": 1,
+          "voice": "Fritz-PlayAI",
+          "volume": 1
+        }
+      }
+    }
+  },
+  {
+    "url": "https://flynaschb-bffapp-qa.purplecliff-1711f747.westeurope.azurecontainerapps.io/api/v1/new/chat",
+    "status": 201,
+    "method": "POST",
+    "body": {
+      "conversation_id": "cc010eed-fcdc-4cd2-899e-6251e3e88612",
+      "response": {
+        "type": "string",
+        "message": "The maximum size allowed for checked baggage on flynas is 75cm in height, 50cm in width, and 33cm in depth. Any bag exceeding these dimensions will not be accepted, and no single checked bag should weigh more than 32kg. For special or oversized items, additional fees and conditions may apply.\n\nReferences:\nhttps://www.flynas.com/en/plan-my-trip/baggage\nhttps://www.flynas.com/en/contact-us/faqs",
+        "textToSpeech": {
+          "speech": true,
+          "audioURL": null
+        },
+        "channel_response": "The maximum size allowed for checked baggage on flynas is 75cm in height, 50cm in width, and 33cm in depth. Any bag exceeding these dimensions will not be accepted, and no single checked bag should weigh more than 32kg. For special or oversized items, additional fees and conditions may apply.\n\nReferences:\nhttps://www.flynas.com/en/plan-my-trip/baggage\nhttps://www.flynas.com/en/contact-us/faqs",
+        "lang_info": {
+          "name": "English",
+          "iso2_code": "en",
+          "script": "Latn",
+          "reason": "translation_not_needed"
+        }
+      },
+      "debug_data": {
+        "user_message": "What are the maximum dimensions allowed for checked baggage? ",
+        "conversation_history": [
+          "User: What are the maximum dimensions allowed for checked baggage? ",
+          "Assistant: The maximum size allowed for checked baggage on flynas is 75cm in height, 50cm in width, and 33cm in depth. Any bag exceeding these dimensions will not be accepted, and no single checked bag should weigh more than 32kg. For special or oversized items, additional fees and conditions may apply.\n\nReferences:\nhttps://www.flynas.com/en/plan-my-trip/baggage\nhttps://www.flynas.com/en/contact-us/faqs"
+        ],
+        "steps": [
+          {
+            "step": "preprocess_complete",
+            "node": "preprocess_node",
+            "timestamp": "2025-12-26T03:53:03.275899",
+            "processing_time_ms": 28.55,
+            "data": {
+              "original_message": "What are the maximum dimensions allowed for checked baggage? ",
+              "message_to_analyze": "What are the maximum dimensions allowed for checked baggage? ",
+              "derived_meta": null,
+              "matched_option_label": null,
+              "preprocess_trace": {
+                "option_matching": {
+                  "option_match_found": false,
+                  "matched_option_label": null,
+                  "lang_info": {
+                    "name": "English",
+                    "iso2_code": "en",
+                    "reason": "default",
+                    "script": "Latn"
+                  }
+                },
+                "translation": {
+                  "translated": false,
+                  "translated_message": null,
+                  "translation_reason": "english_with_travel_context",
+                  "lang_info": {
+                    "name": "ENGLISH",
+                    "iso2_code": "en",
+                    "reason": "english_with_travel_context",
+                    "use_for_trend": true,
+                    "analysis": {
+                      "english_count": 5,
+                      "total_count": 9,
+                      "english_ratio": 0.5555555555555556,
+                      "travel_context": true,
+                      "has_patterns": false,
+                      "pnr_like_count": 0,
+                      "pnr_ratio": 0,
+                      "non_english_count": 4,
+                      "non_english_ratio": 0.4444444444444444,
+                      "early_exit": false,
+                      "pnr_like": false,
+                      "pnr_details": {
+                        "has_context": false,
+                        "top": {
+                          "code": "ARETHE",
+                          "score": -1.3,
+                          "confidence": "low"
+                        },
+                        "tested": [
+                          {
+                            "code": "ARETHE",
+                            "score": -1.3,
+                            "conf": "low"
+                          }
+                        ]
+                      }
+                    },
+                    "script_heuristics": {
+                      "ascii_ratio": 1,
+                      "en_alpha_count": 51
+                    },
+                    "pnr_detected": false,
+                    "pnr_dominant": false,
+                    "reason_suite": {
+                      "final_decision": {
+                        "needs_translation": false,
+                        "reason": "english_with_travel_context"
+                      },
+                      "tokens": {
+                        "english_count": 5,
+                        "total_count": 9,
+                        "english_ratio": 0.5555555555555556,
+                        "travel_context": true,
+                        "has_patterns": false,
+                        "pnr_like_count": 0,
+                        "pnr_ratio": 0,
+                        "non_english_count": 4,
+                        "non_english_ratio": 0.4444444444444444,
+                        "early_exit": false,
+                        "pnr_like": false,
+                        "pnr_details": {
+                          "has_context": false,
+                          "top": {
+                            "code": "ARETHE",
+                            "score": -1.3,
+                            "confidence": "low"
+                          },
+                          "tested": [
+                            {
+                              "code": "ARETHE",
+                              "score": -1.3,
+                              "conf": "low"
+                            }
+                          ]
+                        }
+                      },
+                      "script": {
+                        "ascii_ratio": 1,
+                        "en_alpha_count": 51
+                      },
+                      "pnr": {
+                        "detected": false,
+                        "details": {
+                          "has_context": false,
+                          "top": {
+                            "code": "ARETHE",
+                            "score": -1.3,
+                            "confidence": "low"
+                          },
+                          "tested": [
+                            {
+                              "code": "ARETHE",
+                              "score": -1.3,
+                              "conf": "low"
+                            }
+                          ]
+                        },
+                        "dominant": false
+                      },
+                      "trend": {
+                        "iso2_code": null,
+                        "used": false,
+                        "reason": null
+                      },
+                      "detectors": {
+                        "outputs": null,
+                        "non_english_score": null,
+                        "threshold_used": null
+                      },
+                      "safeguards": {
+                        "ascii_english_safeguard": false,
+                        "obvious_english": true,
+                        "early_exit_non_english": false
+                      }
+                    }
+                  }
+                },
+                "post_translation_guardrails": {
+                  "disabled": true
+                },
+                "preprocess_intent_seed": {
+                  "intent": "agent",
+                  "clarification": {}
+                },
+                "risk_aggregation": {
+                  "risk_score": 0,
+                  "blocked": false,
+                  "soft_wall": false,
+                  "warnings": []
+                }
+              }
+            }
+          },
+          {
+            "step": "classify_intention_complete",
+            "node": "classify_intention_node",
+            "timestamp": "2025-12-26T03:53:04.674097",
+            "processing_time_ms": 1393.78,
+            "data": {
+              "intent": "faq",
+              "sub_intent": null,
+              "classification_trace": {
+                "entry": {
+                  "enabled_intents": [
+                    "flight_booking",
+                    "baggage",
+                    "manage_booking",
+                    "terminal",
+                    "faq",
+                    "booking_info",
+                    "flight_status",
+                    "chitchat"
+                  ],
+                  "channel": "web",
+                  "otp_candidate": null,
+                  "current_flow": null
+                },
+                "pattern_analysis": {
+                  "patterns": {
+                    "baggage_claim": {
+                      "value": null
+                    },
+                    "pnr_code": {
+                      "value": null,
+                      "reason": "english_only",
+                      "high_probability": false,
+                      "last_name_present": false
+                    },
+                    "last_name_phrase": {
+                      "value": null,
+                      "awaiting_last_name": false
+                    }
+                  },
+                  "matched_patterns": {},
+                  "intent_from_patterns": null
+                },
+                "query_enhancement": {
+                  "applied": true,
+                  "method": "deterministic",
+                  "history_turns_used": 0,
+                  "flow_context_used": false,
+                  "expansion_terms": [
+                    "what",
+                    "whats",
+                    "maximum",
+                    "maximums",
+                    "dimensions"
+                  ],
+                  "confidence": 1,
+                  "original_length": 61,
+                  "enhanced_length": 272,
+                  "enhanced_message": "what maximum dimensions allowed checked baggage flynas support context covering booking changes new bookings cancellations refunds payments check boarding baggage seat selection travel documents visa flight status delays disruptions vouchers ancillaries special assistance"
+                },
+                "score_adjustments": {
+                  "adjustments": {},
+                  "pnr_context_active": false,
+                  "is_first_message": true
+                },
+                "embeddings_classification": {
+                  "top_flows": [
+                    {
+                      "flow_name": "faq",
+                      "@search.score": 0.7699403166770935
+                    },
+                    {
+                      "flow_name": "chitchat",
+                      "@search.score": 0.7450637817382812
+                    },
+                    {
+                      "flow_name": "manage_booking",
+                      "@search.score": 0.7433105707168579
+                    },
+                    {
+                      "flow_name": "booking_info",
+                      "@search.score": 0.7423350214958191
+                    },
+                    {
+                      "flow_name": "flight_status",
+                      "@search.score": 0.7393437027931213
+                    },
+                    {
+                      "flow_name": "baggage",
+                      "@search.score": 0.7315039038658142
+                    },
+                    {
+                      "flow_name": "flight_booking",
+                      "@search.score": 0.7284615635871887
+                    },
+                    {
+                      "flow_name": "terminal",
+                      "@search.score": 0.7242848873138428
+                    },
+                    {
+                      "flow_name": "human",
+                      "@search.score": 0.7227800488471985
+                    }
+                  ],
+                  "top_tools": [
+                    {
+                      "tool_name": "answer_baggage_policy_questions",
+                      "flow_name": "faq",
+                      "@search.score": 0.8163906335830688
+                    },
+                    {
+                      "tool_name": "explain_booking_and_fare_policies",
+                      "flow_name": "faq",
+                      "@search.score": 0.7977239489555359
+                    },
+                    {
+                      "tool_name": "explain_check_in_and_boarding_procedures",
+                      "flow_name": "faq",
+                      "@search.score": 0.7930499315261841
+                    },
+                    {
+                      "tool_name": "provide_fleet_and_aircraft_information",
+                      "flow_name": "faq",
+                      "@search.score": 0.7927350401878357
+                    },
+                    {
+                      "tool_name": "terminal_arrival_guidance",
+                      "flow_name": "terminal",
+                      "@search.score": 0.7864435315132141
+                    },
+                    {
+                      "tool_name": "manage_booking_choose_action",
+                      "flow_name": "manage_booking",
+                      "@search.score": 0.7847249507904053
+                    },
+                    {
+                      "tool_name": "explain_premium_services_and_amenities",
+                      "flow_name": "faq",
+                      "@search.score": 0.7704967856407166
+                    },
+                    {
+                      "tool_name": "initiate_baggage_selection",
+                      "flow_name": "manage_booking",
+                      "@search.score": 0.7695223093032837
+                    },
+                    {
+                      "tool_name": "provide_special_services_information",
+                      "flow_name": "faq",
+                      "@search.score": 0.7692875862121582
+                    },
+                    {
+                      "tool_name": "terminal_departure_guidance",
+                      "flow_name": "terminal",
+                      "@search.score": 0.7687157392501831
+                    }
+                  ]
+                },
+                "intent_ranking": {
+                  "rank_result": {
+                    "intents": [
+                      {
+                        "name": "faq",
+                        "score": 2.34418
+                      },
+                      {
+                        "name": "manage_booking",
+                        "score": 1.720238
+                      },
+                      {
+                        "name": "terminal",
+                        "score": 1.030187
+                      },
+                      {
+                        "name": "baggage",
+                        "score": 0.544074
+                      },
+                      {
+                        "name": "chitchat",
+                        "score": 0.482188
+                      },
+                      {
+                        "name": "flight_status",
+                        "score": 0.360451
+                      },
+                      {
+                        "name": "booking_info",
+                        "score": 0.154024
+                      },
+                      {
+                        "name": "human",
+                        "score": 0.108696
+                      },
+                      {
+                        "name": "flight_booking",
+                        "score": -0.110572
+                      }
+                    ]
+                  },
+                  "allowed_intents": [
+                    "faq",
+                    "manage_booking",
+                    "terminal",
+                    "baggage",
+                    "chitchat",
+                    "human"
+                  ],
+                  "current_flow": null,
+                  "note": "Current flow added to allowed intents if not already in the allowed intents"
+                },
+                "llm_classification": {
+                  "llm_response": {
+                    "intent": "faq",
+                    "reason": "The user is asking about the maximum dimensions allowed for checked baggage, which is a general policy question about baggage rules. This fits the faq intent as it is not tied to a specific booking or claim, nor is it a request to add baggage or track a lost bag. Other intents like manage_booking, baggage, terminal, or chitchat do not apply because there is no booking reference, no action request, and the question is clearly about flynas travel policy."
+                  },
+                  "current_flow": null
+                }
+              }
+            }
+          },
+          {
+            "step": "faq_complete",
+            "node": "faq_node",
+            "timestamp": "2025-12-26T03:53:10.061341",
+            "processing_time_ms": 3796.09,
+            "data": {
+              "response": {
+                "type": "string",
+                "message": "The maximum size allowed for checked baggage on flynas is 75cm in height, 50cm in width, and 33cm in depth. Any bag exceeding these dimensions will not be accepted, and no single checked bag should weigh more than 32kg. For special or oversized items, additional fees and conditions may apply.\n\nReferences:\nhttps://www.flynas.com/en/plan-my-trip/baggage\nhttps://www.flynas.com/en/contact-us/faqs",
+                "textToSpeech": {
+                  "speech": true,
+                  "audioURL": null
+                },
+                "channel_response": "The maximum size allowed for checked baggage on flynas is 75cm in height, 50cm in width, and 33cm in depth. Any bag exceeding these dimensions will not be accepted, and no single checked bag should weigh more than 32kg. For special or oversized items, additional fees and conditions may apply.\n\nReferences:\nhttps://www.flynas.com/en/plan-my-trip/baggage\nhttps://www.flynas.com/en/contact-us/faqs",
+                "lang_info": {
+                  "name": "English",
+                  "iso2_code": "en",
+                  "script": "Latn",
+                  "reason": "translation_not_needed"
+                }
+              },
+              "faq_trace": {
+                "search_result": {
+                  "reason": "CONTEXT_FOUND",
+                  "confidence_score": 0.048915917503966164,
+                  "query": "What are the maximum size dimensions allowed for checked baggage on flynas?",
+                  "categories": [
+                    "Baggage",
+                    "Flynas General FAQ"
+                  ],
+                  "references": [
+                    {
+                      "content": "specific allowance before traveling. \u2022 Maximum dimensions for checked baggage are 75cm H, 50cm W, 33cm D. Any baggage exceeding these dimensions will not be accepted. \u2022 No single item of checked baggage should exceed 32 kg. \u2022 Codeshare and interline flights may have different baggage policies. #### Important Notes: \u2022Fragile, valuable, or perishable items should not be packed in checked baggage. The airline is not responsible for damage to improperly packed items. \u2022Dangerous goods, including flammable materials, explosives, and compressed gases, are strictly prohibited in checked baggage. For a full list of restricted items, please visit [flynas prohibited items](https://www.flynas.com/en/baggage/prohibited-items \"https://www.flynas.com/en/baggage/prohibited-items\"). \u2022Acceptance of excess baggage is at the airline\u2019s discretion and subject to flynas' baggage allowance policy. ![](https://static.flynas.com/media/6199/baggage-dimensions1en.png) #### EXCESS BAGGAGE - If you plan to travel",
+                      "source_url": "https://www.flynas.com/en/plan-my-trip/baggage",
+                      "source_id": "Checked_Baggage_c9273cd3-207c-4869-aa43-2694d9e7ebcb",
+                      "category": "Baggage"
+                    },
+                    {
+                      "content": "2X23 kg Economy Class Economy Class Economy Class Premium Class - Group 1 :(Abu Dhabi, Almaty, Amman, Antalya, Baghdad, Bahrain, Baku, Batumi, Bishkek, Bodrum, Brussels, Casablanca, Damascus, Dhaka, Doha, Dubai, Erbil, Geneva, Hurghadah, Istanbul, Krak\u00f3w, Kuwait, Marseille, Milan, Moscow, Namangan, Najaf, North Coast, Osh, Prague, Pristina, Rize, Salalah, Salzburg, Sarajevo, Sharm El Sheikh, Sharjah, Tirana, Tbilisi, Trabzon, Tashkent, Vienna) - Group 2 : (Algiers, Cairo, Constantine.) - Group 3 : (Addis Ababa, Asmara, Calicut, Hyderabad, Islamabad, Karachi, Lahore, Lucknow, Mumbai, New Delhi, Nairobi, Sohag) Infant passengers are entitled to take 10 kg of hold baggage. #### Checked Baggage \u2022 Baggage allowances vary depending on the fare type and route. Guests are encouraged to check their specific allowance before traveling. \u2022 Maximum dimensions for checked baggage are 75cm H, 50cm W, 33cm D. Any baggage exceeding these dimensions will not be accepted. \u2022 No single item of checked",
+                      "source_url": "https://www.flynas.com/en/plan-my-trip/baggage",
+                      "source_id": "Checked_Baggage_c9273cd3-207c-4869-aa43-2694d9e7ebcb",
+                      "category": "Baggage"
+                    },
+                    {
+                      "content": "required for a particular flight may change at any time until the booking is confirmed, and the applicable Miles are applied as payment for the redeemed flight. ## 1\\. How much baggage can I take into the cabin? Each guest may carry 1 bag of max 7kg, maximum dimensions of 56(H)X36(W)X23(D)cm for no additional charge. If any cabin baggage is heavier or larger than the permitted weight/dimensions it must be checked in as hold baggage and relevant excess baggage charges must be paid.. ## 2\\. How much baggage can I check-in? Your hold baggage allowance will depend on the fare you have booked.. ## 3\\. Can I check-in larger baggage, such as sports equipment? Non-standard/oversized items of baggage such as Golf Clubs and Skis may be accepted for carriage as Hold Baggage. If accepted, any item over our 158CM (H+W+D) will be subject to a handling fee of SAR100 per piece. We retain the right to refuse to carry as baggage any item due to its size, shape, weight, nature or character. We retain",
+                      "source_url": "https://www.flynas.com/en/contact-us/faqs",
+                      "source_id": "Flynas_FAQs_e9e09909-d066-40dd-a9b4-08ac01b50e6d",
+                      "category": "Flynas General FAQ"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "step": "postprocess_complete",
+            "node": "postprocess_node",
+            "timestamp": "2025-12-26T03:53:10.091141",
+            "processing_time_ms": 7.21,
+            "data": {
+              "response": {
+                "type": "string",
+                "message": "The maximum size allowed for checked baggage on flynas is 75cm in height, 50cm in width, and 33cm in depth. Any bag exceeding these dimensions will not be accepted, and no single checked bag should weigh more than 32kg. For special or oversized items, additional fees and conditions may apply.\n\nReferences:\nhttps://www.flynas.com/en/plan-my-trip/baggage\nhttps://www.flynas.com/en/contact-us/faqs",
+                "textToSpeech": {
+                  "speech": true,
+                  "audioURL": null
+                },
+                "channel_response": "The maximum size allowed for checked baggage on flynas is 75cm in height, 50cm in width, and 33cm in depth. Any bag exceeding these dimensions will not be accepted, and no single checked bag should weigh more than 32kg. For special or oversized items, additional fees and conditions may apply.\n\nReferences:\nhttps://www.flynas.com/en/plan-my-trip/baggage\nhttps://www.flynas.com/en/contact-us/faqs",
+                "lang_info": {
+                  "name": "English",
+                  "iso2_code": "en",
+                  "script": "Latn",
+                  "reason": "translation_not_needed"
+                }
+              },
+              "faq_trace": {
+                "search_result": {
+                  "reason": "CONTEXT_FOUND",
+                  "confidence_score": 0.048915917503966164,
+                  "query": "What are the maximum size dimensions allowed for checked baggage on flynas?",
+                  "categories": [
+                    "Baggage",
+                    "Flynas General FAQ"
+                  ],
+                  "references": [
+                    {
+                      "content": "specific allowance before traveling. \u2022 Maximum dimensions for checked baggage are 75cm H, 50cm W, 33cm D. Any baggage exceeding these dimensions will not be accepted. \u2022 No single item of checked baggage should exceed 32 kg. \u2022 Codeshare and interline flights may have different baggage policies. #### Important Notes: \u2022Fragile, valuable, or perishable items should not be packed in checked baggage. The airline is not responsible for damage to improperly packed items. \u2022Dangerous goods, including flammable materials, explosives, and compressed gases, are strictly prohibited in checked baggage. For a full list of restricted items, please visit [flynas prohibited items](https://www.flynas.com/en/baggage/prohibited-items \"https://www.flynas.com/en/baggage/prohibited-items\"). \u2022Acceptance of excess baggage is at the airline\u2019s discretion and subject to flynas' baggage allowance policy. ![](https://static.flynas.com/media/6199/baggage-dimensions1en.png) #### EXCESS BAGGAGE - If you plan to travel",
+                      "source_url": "https://www.flynas.com/en/plan-my-trip/baggage",
+                      "source_id": "Checked_Baggage_c9273cd3-207c-4869-aa43-2694d9e7ebcb",
+                      "category": "Baggage"
+                    },
+                    {
+                      "content": "2X23 kg Economy Class Economy Class Economy Class Premium Class - Group 1 :(Abu Dhabi, Almaty, Amman, Antalya, Baghdad, Bahrain, Baku, Batumi, Bishkek, Bodrum, Brussels, Casablanca, Damascus, Dhaka, Doha, Dubai, Erbil, Geneva, Hurghadah, Istanbul, Krak\u00f3w, Kuwait, Marseille, Milan, Moscow, Namangan, Najaf, North Coast, Osh, Prague, Pristina, Rize, Salalah, Salzburg, Sarajevo, Sharm El Sheikh, Sharjah, Tirana, Tbilisi, Trabzon, Tashkent, Vienna) - Group 2 : (Algiers, Cairo, Constantine.) - Group 3 : (Addis Ababa, Asmara, Calicut, Hyderabad, Islamabad, Karachi, Lahore, Lucknow, Mumbai, New Delhi, Nairobi, Sohag) Infant passengers are entitled to take 10 kg of hold baggage. #### Checked Baggage \u2022 Baggage allowances vary depending on the fare type and route. Guests are encouraged to check their specific allowance before traveling. \u2022 Maximum dimensions for checked baggage are 75cm H, 50cm W, 33cm D. Any baggage exceeding these dimensions will not be accepted. \u2022 No single item of checked",
+                      "source_url": "https://www.flynas.com/en/plan-my-trip/baggage",
+                      "source_id": "Checked_Baggage_c9273cd3-207c-4869-aa43-2694d9e7ebcb",
+                      "category": "Baggage"
+                    },
+                    {
+                      "content": "required for a particular flight may change at any time until the booking is confirmed, and the applicable Miles are applied as payment for the redeemed flight. ## 1\\. How much baggage can I take into the cabin? Each guest may carry 1 bag of max 7kg, maximum dimensions of 56(H)X36(W)X23(D)cm for no additional charge. If any cabin baggage is heavier or larger than the permitted weight/dimensions it must be checked in as hold baggage and relevant excess baggage charges must be paid.. ## 2\\. How much baggage can I check-in? Your hold baggage allowance will depend on the fare you have booked.. ## 3\\. Can I check-in larger baggage, such as sports equipment? Non-standard/oversized items of baggage such as Golf Clubs and Skis may be accepted for carriage as Hold Baggage. If accepted, any item over our 158CM (H+W+D) will be subject to a handling fee of SAR100 per piece. We retain the right to refuse to carry as baggage any item due to its size, shape, weight, nature or character. We retain",
+                      "source_url": "https://www.flynas.com/en/contact-us/faqs",
+                      "source_id": "Flynas_FAQs_e9e09909-d066-40dd-a9b4-08ac01b50e6d",
+                      "category": "Flynas General FAQ"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "step": "fastapi_request_response_complete",
+            "node": "fastapi",
+            "timestamp": "2025-12-26T03:53:10.106511",
+            "processing_time_ms": 6871.15,
+            "data": {
+              "request_processing_time_ms": 6871.15,
+              "note": "Includes endpoint execution + response serialization (body parsing not included)"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

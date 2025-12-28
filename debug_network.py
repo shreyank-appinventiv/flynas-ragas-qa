@@ -10,7 +10,7 @@ from playwright.async_api import async_playwright
 
 async def main():
     CHATBOT_URL = "https://flynaschb-frontendapp-qa.blackflower-c82fc685.westeurope.azurecontainerapps.io"
-    TEST_QUESTION = "Can i carry my dog onboard?"
+    TEST_QUESTION = "What are the maximum dimensions allowed for checked baggage?"
 
     print("=" * 60)
     print("Network Debug - Capturing API calls")
@@ -129,7 +129,7 @@ async def main():
         print(f"Content (first 300 chars):\n{ctx['content'][:300]}...")
 
     # Save full captured data to file
-    with open('/home/shreyank06/Desktop/projects/testing_bulls_pvt_ltd/dog_onoard_network_debug.json', 'w') as f:
+    with open('/home/shreyank06/Desktop/projects/testing_bulls_pvt_ltd/checked_baggage_dimensions_debug.json', 'w') as f:
         json.dump(captured_data, f, indent=2, default=str)
 
     print(f"\n[5] Full data saved to network_debug.json")
